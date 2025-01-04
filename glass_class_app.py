@@ -17,7 +17,7 @@ from PIL import Image
 model = joblib.load('glass_classification.joblib')
 image = Image.open('glass.jpg')
 st.title("Glass Type Prediction")
-st.image(image, use_column_width=True)
+st.image(image,use_container_width=True)
 
 # Create input fields for the features
 col1, col2 ,col3,col4,col5 = st.columns(5)
